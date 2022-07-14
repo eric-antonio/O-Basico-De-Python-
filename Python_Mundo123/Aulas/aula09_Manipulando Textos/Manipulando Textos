@@ -1,0 +1,39 @@
+*******************************************************************************************************************
+***********************/Maniplulação de Strings/****************************************************/28-06-21******
+*******************************************************************************************************************
+
+Fatiamento:
+frase="Curso em Video Python"
+print(frase[9:13])
+Impressão: Vide
+
+print(frase[9:21:2])
+Impressão: VdoPto
+
+print(frase[:5])- do inicio ate a posicao 5;
+
+print(frase[15:])- do inicio ate ao final;
+
+print(frase[9::3])- inicia do 9 vai ate ao fim e vai pular de 3 em 3
+
+
+Analise:
+len()-indica o cumprimento da frase!
+frase.count('o')-ira contar o numero de letras minusculas!
+frase.count('o',0,13)- vai procurar do 0 ao 13.
+frase.find('deo')-vai apresentar em que comento comecou.
+
+
+Transformacao
+
+frase.replace('Python','Android')- subistutuicao
+frse.uper()/lower()
+fraser.captalizer()
+frase.title()
+frase.r/lstrip()
+
+Divisao
+frase.split()- divisao da frse em vectores
+
+Juncao
+''.join(frase)

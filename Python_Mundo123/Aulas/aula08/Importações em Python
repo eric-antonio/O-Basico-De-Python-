@@ -1,0 +1,39 @@
+As importações em Python podem ser feitas de duas formas como em qualquer outra Linguagem.
+
+Suponhamos que temos duas Bibliotecas : Doces e Salgados;
+
+Doces:Sorvete;Pudim;Gelatina;
+Salgados:Chamussas;Resois;Coxinhas;
+
+Podemos efectuar a imporação da seguinte forma:
+
+* import Doces-que ira importar toda biblioteca dos doces!
+
+* from Salgados import Chamussas- que ira importatr somente as chamussas que é o necessario,
+pupando assim memoria no nosso codigo!
+
+------------------------------------------------------------------------------------------------
+
+Exemplos da biblioteca math:
+ceil:aredondamento para cima
+    Ex: 4,5-> 5
+
+floor:aredondamento regresivo
+    Ex:4,5-> 4
+
+trunc: elimina todos os valores apos a virgula
+    Ex: 4,5-> 4
+
+pow: Potencia de um n.
+
+sqrt: Raiz quadrada.
+
+factoria: factorial de um numero.
+
+Exemplo_1:
+        from math import sqrt
+        aplicabilidade : sqrt(num)
+
+Exemplo_2:
+        import math
+        aplicabilidade : math.sqrt(num)
