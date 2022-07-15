@@ -1,5 +1,3 @@
-
-
 ********************** Alinhamento de caracteres***********
 linha = '-' * 50
 titulo = 'Aulas de Python'
