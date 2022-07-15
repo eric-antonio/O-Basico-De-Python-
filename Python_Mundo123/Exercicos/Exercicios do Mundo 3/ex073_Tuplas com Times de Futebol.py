@@ -22,5 +22,5 @@ print(f'\033[1;36m {equipes[-4:]}\033[m')
 print(f'\033[0;35m =========== Lista em ordem Alfabetica =============\033[m')
 print(f'\033[1;36m {sorted(equipes)}\033[m')
 
-print(f'\033[0;35m =========== Equipe na 8 Posição =============\033[m')
-print(equipes.index('Real Madrid'))
+print(f'\033[0;35m =========== Em Posição se enconta o Barcelona?  =============\033[m')
+print('\033[0;36m A Equipe na 8 POSISAO É {}\033[m'.format(equipes.index('Barcelona')))
