@@ -1,7 +1,7 @@
 lista = list()
 
 for i in range(0, 5):
-    n = int(input(f'Insira um valor: '))
+    n = int(input(f'\033[0;32m Degite um valor: \033[m'))
     if i == 0 or n > lista[-1]:
         lista.append(n)
     else:
