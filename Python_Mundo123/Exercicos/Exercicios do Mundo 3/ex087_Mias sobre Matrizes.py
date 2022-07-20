@@ -24,4 +24,7 @@ print(f' A soma dos valores da 3 coluna é {scol}')
 
 for c in range(0, 3):
     if c == 0:
-        mai = matriz
+        mai = matriz[1][c]
+    elif matriz[1][c] > mai:
+        mai = matriz[1][c]
+print(f'O maior foi {mai}')
