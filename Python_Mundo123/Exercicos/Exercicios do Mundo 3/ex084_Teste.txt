@@ -1,0 +1,22 @@
+#Essse cod foi uma tentativa de resolver o exerc Nr 84
+pessoas = []
+matriz_pessoas = []
+maior = menor = 0
+while True:
+    pessoas.append(str(input(f'Nome: ')))
+    pessoas.append(int(input(f'Peso: ')))
+
+    resp = str(input(f'Quer continuar? [S/N]: ')).upper()[0]
+    for i,v in enumerate(pessoas) :
+        if v == 0:
+            maior = menor = pessoas[i]
+        else:
+            if pessoas[v] > maior:
+                maior = pessoas[v]
+            if pessoas[v] < menor:
+                menor = pessoas[v]
+    if resp in 'N':
+        break
+matriz_pessoas.append(pessoas[:])
+print(f' Ao todo foram {len(matriz_pessoas)} cadastradas!')
+print(f'O maior pesso foi de {maior}Kg')
