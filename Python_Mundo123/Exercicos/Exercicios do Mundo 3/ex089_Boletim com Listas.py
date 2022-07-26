@@ -11,7 +11,19 @@ while True:
     ans = str(input(f'Quer continuar a cadastrar estudantes? [S/N]: ')).upper()[0]
     if ans in 'Nn':
         break
-for i, e in enumerate(ficha):
-    print(f'{e}', end='')
+
+print('-='*30)
+print(f'{"No.":<4}{"Nome:":<10}{"Media:":>8}')
+for indice, aluno in enumerate(ficha):
+    print(f'{indice:<4}{aluno[0]:<10}{aluno[2]:8.1f}')
+
+while True:
+    print(f'-'*35)
+    op= int(input(f'Mostrar notas de qual alno? \n (Degitando 999 o progrma insera! )'))
+    if op == 999:
+        print(f'Finalizando!...')
+        break
+    if op <= len(ficha):
+        print(f'Notas de {ficha[op][0]} sao {cad[op][1]}')
 
 print(f'Chegou!!!!!')
