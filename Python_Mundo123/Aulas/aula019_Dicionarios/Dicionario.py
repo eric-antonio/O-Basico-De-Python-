@@ -33,3 +33,9 @@ o indice agora são': nome e idade!
      Caso exista alguma duvida recomendo rever o video!
      https://youtu.be/ZWj8o692qGY
 """
+
+pessoa = {'nome': 'eric',
+          'sexo': 'M',
+          'idade': 22}
+print(f' O {pessoa["nome"]} tem {pessoa["idade"]} anos!')
+print(pessoa.keys())
