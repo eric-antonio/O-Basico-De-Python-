@@ -34,8 +34,37 @@ o indice agora são': nome e idade!
      https://youtu.be/ZWj8o692qGY
 """
 
+
+"""
 pessoa = {'nome': 'eric',
           'sexo': 'M',
           'idade': 22}
 print(f' O {pessoa["nome"]} tem {pessoa["idade"]} anos!')
-print(pessoa.keys())
+
+for k, v in pessoa.items():
+    print(f'{k:<4} = {v:<2}')
+
+print(f'----Usando o  del')
+del pessoa['sexo']
+for k, v in pessoa.items():
+    print(f'{k:<4}= {v:<4}')
+
+print(f'---Adicionando dados ao dicionario')
+pessoa['peso'] = 85.3
+pessoa['sexo'] = 'M'
+for k, v in pessoa.items():
+    print(f'{k:<4}= {v:<4}') """
+
+"""Cirando um dicionario dentro de uma lista!"""
+
+provincia1 = {'cidade': 'Maputo Cidade', 'Sigla': 'MC'}
+provincia2 = {'cidade': 'Maputo Provinvia', 'Sigla': 'MP'}
+provincia3 = {'cidade': 'Gaza', 'Sigla': 'GZ'}
+provincia4 = {'cidade': 'Cidade Da Beira', 'Sigla': 'BR'}
+provincia5 = {'cidade': 'Cabo Delgado', 'Sigla': 'CD'}
+moz = list()
+moz.append(provincia1), moz.append(provincia2), moz.append(provincia3), moz.append(provincia4), moz.append(provincia5)
+
+
+for i, v in enumerate(moz):
+    print(f'{v}')
