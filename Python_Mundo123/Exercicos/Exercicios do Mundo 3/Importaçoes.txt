@@ -1,0 +1,7 @@
+from datetime import datetime
+ concurrentDateTime = datetime.datetime.now()
+ data = concurrentDateTime.date()
+ print(f'{data.year}')
+
+ ou
+ idade = datetime.now().year - ano
