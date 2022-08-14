@@ -1,8 +1,10 @@
 def escreva(msg):
-    print('~'*20)
-    print(msg)
-    print('~' * 20)
+    tam = len(msg)+4
+    print('~'*tam)
+    print(msg.center(5))
+    print('~'*tam)
 
 #Program pricipal
-escreva('https://github.com/eric-antonio')
+msg = str(input(f'Insira um texto: '))
+escreva(msg)
 #https://github.com/eric-antonio
