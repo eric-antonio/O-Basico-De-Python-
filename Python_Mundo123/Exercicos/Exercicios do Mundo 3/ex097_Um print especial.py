@@ -7,4 +7,3 @@ def escreva(msg):
 #Program pricipal
 msg = str(input(f'Insira um texto: '))
 escreva(msg)
-#https://github.com/eric-antonio
