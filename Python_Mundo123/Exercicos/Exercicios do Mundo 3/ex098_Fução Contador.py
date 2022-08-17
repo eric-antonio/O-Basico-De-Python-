@@ -1,12 +1,14 @@
 from time import sleep
 def contador(i, f, p):
-    print(f'=-'*20)
-    print(f'\033[0;33m Contagem de {i} até {f} de {p} em {p}\033[m')
     
     if p < 0:
         p *= -1
     if p == 0:
         p = 1
+
+    print(f'=-'*20)
+    print(f'\033[0;33m Contagem de {i} até {f} de {p} em {p}\033[m')
+    
     if i < f:
 
         cont = i
