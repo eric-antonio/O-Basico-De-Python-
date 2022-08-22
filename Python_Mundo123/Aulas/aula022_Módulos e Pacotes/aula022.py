@@ -7,4 +7,4 @@ def fatorial(n):
 
 num = int(input(f'Degite um numero: '))
 fat = fatorial(num)
-#print(f'O fatorial de {num}! é {fat} ')
+print(f'O fatorial de {num}! é {fat} ')
