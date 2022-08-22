@@ -1,4 +1,4 @@
-from uteis import *
+from uteis import numeros
 
 """
       Em caso de comflito de importações ou existam modulos com 
@@ -14,8 +14,9 @@ from uteis import *
       
 """
 
+
 num = int(input(f'Degite um numero: '))
-fat = fatorial(num)
+fat = numeros.fatorial(num)
 print(f'O fatorial de {num}! é {fat} \n'
-      f'O dobro do {num} é {dobro(num)}\n'
-      f'O triplo de {num} é {triplo(num)}')
+      f'O dobro do {num} é {numeros.dobro(num)}\n'
+      f'O triplo de {num} é {numeros.triplo(num)}')
