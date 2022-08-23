@@ -1,5 +1,6 @@
 from utilidadescv import moeda
-p = float(input(f'Degite o preco (MT): '))
+from utilidadescv import dado
+p = dado.leiDinheiro(f'Dedite um preco: ')
 print(moeda.resumo(p, 20, 10))
 
 
