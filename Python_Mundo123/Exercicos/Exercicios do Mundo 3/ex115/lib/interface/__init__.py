@@ -3,8 +3,7 @@ def leiaInt(msg):
         try:
             n = int(input(msg))
         except (ValueError, TypeError):
-            print(f'\033[0;31m Erro!-Digite um valor Inteiro! \n'
-                  f'Dentro das opções dispostas acima! \033[m')
+            print(f'\033[0;31m Erro!-Digite um valor Inteiro! \033[m')
         except (KeyboardInterrupt):
             print(f'\033[0;31m O usuario não inseriu nehum dado! \033[m')
             continue
