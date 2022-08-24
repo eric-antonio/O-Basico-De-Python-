@@ -13,21 +13,21 @@ def leiaInt(msg):
             return n
 
 
-def linha(tam=42):
+def linha(tam=40):
     return '-' * tam
 
 
 def cabeçalho(txt):
     print(linha())
-    print(f'{txt}'.center(40))
+    print(f'{txt}'.center(30))
     print(linha())
 
 
 def menu(lista):
-    cabeçalho('MENU PRINCIPAL')
+    cabeçalho('\033[0;34m MENU PRINCIPAL \033[m')
     c = 1
     for item in lista:
-        print(f'{c} - {item}')
+        print(f'\033[0;33m{c}\033[m - \033[0;32m{item}\033[m')
         c += 1
     print(linha())
     opc = leiaInt(f'Sua opção: ')

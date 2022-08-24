@@ -1,4 +1,16 @@
 from lib import interface
+from  time import sleep
 
-ans = interface.menu(['Criar Arquivo','Cadastrar Pessoas','Listar Pessoas','Sair do Sistema'])
-# a variavel ans passa uma lista para o metodo menu que por sua vez permite a inserção de uma opção!
+while True:
+    ans = interface.menu(['Ver Pessoas Cadastradas','Cadastrar nova Pessoa','Sair do Sistema'])
+    # a variavel ans passa uma lista para o metodo menu que por sua vez permite a inserção de uma opção!
+    if ans == 1:
+        print(f'Op1')
+    elif ans == 2:
+        interface.cabeçalho(f'Op2')
+    elif ans == 3:
+        interface.cabeçalho(f'\033[0;33m Saindo do Sistema....\033[m')
+        break
+    else:
+        interface.cabeçalho(f'\033[0;31m Erro- Digite uma op valida! \033[m')
+        sleep(0.2)
