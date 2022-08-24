@@ -1,8 +1,17 @@
 from lib import interface
-from  time import sleep
+from time import sleep
+from lib import arquivo
+
+arq = 'bd.txt'
+
+if arquivo.arquivoExiste(arq):
+    interface.cabeçalho(f'\033[0;32m Arquivo encontrado com Sucesso!\033[m')
+else:
+    interface.cabeçalho(f'\033[0;31m Arquivo não encontrado!\033[m')
+
 
 while True:
-    ans = interface.menu(['Ver Pessoas Cadastradas','Cadastrar nova Pessoa','Sair do Sistema'])
+    ans = interface.menu(['Ver Pessoas Cadastradas', 'Cadastrar nova Pessoa', 'Sair do Sistema'])
     # a variavel ans passa uma lista para o metodo menu que por sua vez permite a inserção de uma opção!
     if ans == 1:
         print(f'Op1')
