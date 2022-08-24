@@ -8,6 +8,7 @@ if arquivo.arquivoExiste(arq):
     interface.cabeçalho(f'\033[0;32m Arquivo encontrado com Sucesso!\033[m')
 else:
     interface.cabeçalho(f'\033[0;31m Arquivo não encontrado!\033[m')
+    arquivo.criarArquivo(arq)
 
 
 while True:
@@ -23,3 +24,4 @@ while True:
     else:
         interface.cabeçalho(f'\033[0;31m Erro- Digite uma op valida! \033[m')
         sleep(0.2)
+        
