@@ -1,8 +1,11 @@
 from time import sleep
+from lib import arquivo 
 from lib import interface
 
 
-
+arq = 'BD_Gestão_D_Professores!'
+if not arquivo.arquivoExiste(arq):
+    arquivo.criarArquivo(arq)
 
 
 while True:
