@@ -30,7 +30,7 @@ def cabeçalho(txt):
 #---Menu----
 def menu(lista):
     # um contador para nos ajudar a idicar as opções!
-    cabeçalho('\033[0;34m Sistema de Geão de Professores \033[m')
+    cabeçalho('\033[0;34m Sistema de Geão de Professores \033[m'.center(40))
     c = 1
     
     for item in lista:
@@ -38,6 +38,5 @@ def menu(lista):
         c += 1
     print(linha())
     opc = leiaInt(f'Digite a sua opção: ')
-
     return opc
 
