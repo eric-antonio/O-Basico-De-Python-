@@ -53,6 +53,3 @@ def cadstrar(arq, nome='<Desconhecido>', idade=0):
             a.close()
         finally:
             a.close()
-
-
-
