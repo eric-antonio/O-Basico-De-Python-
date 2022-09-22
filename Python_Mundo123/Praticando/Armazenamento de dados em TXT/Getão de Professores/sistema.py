@@ -23,7 +23,8 @@ while True:
         arquivo.cadstrar(arq, nome, idade, instituição, disciplina, cargaHoraria, salario)
 
     elif ans == 2:
-        interface.cabeçalho('OP2')
+        interface.cabeçalho(f'\033[0;33m Professores Cadastrados \033[m')
+        arquivo.lerArquivo(arq)
     elif ans == 3:
         interface.cabeçalho(f'\033[0;33m Saindo do Sistema....\033[m')
         break

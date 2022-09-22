@@ -28,11 +28,12 @@ def lerArquivo(nome):
     except:
         interface.cabeçalho(f'\033[0;31m ERRO AO LER O ARQUIVO\033[m'.center(30))
     else:
-        interface.cabeçalho(f'\003[0;33m  Professores Cdastrados \033[m')
+        #interface.cabeçalho(f'\003[0;33m  Professores Cdastrados \033[m')
+        print(f'{"Nome":<10} - {"Idade":>7} {"Instituição":>10} {"Disciplina":>15} {"Carga Horaria":>7} {"Salario":>7} ')
         for linha in a:
             dado = linha.split(';')
             dado[1] = dado[1].replace('\n', '')
-            print(f'{dado[0]:<30} - {dado[1]:>2} {dado[2]:>}')
+            print(f'{dado[0]:<3} - {dado[1]:>2} {dado[2]:>} {dado[3]:>} {dado[4]:>} {dado[5]:>} ')
     finally:
         a.close()
 
