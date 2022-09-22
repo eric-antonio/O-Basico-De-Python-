@@ -38,14 +38,14 @@ def lerArquivo(nome):
 
 
 #-----Cdastras no arquivo-----
-def cadstrar(arq, nome='<Desconhecido>', idade=0):
+def cadstrar(arq, nome='<Desconhecido>', idade=0,instituição='<Unvalible>' ,disciplina='<Unvalible>', cargaH=0,salario=0):
     try:
         a = open(arq,'at')
     except:
         interface.cabeçalho(f'\033[0;31m Não foi possivel localizar o Arquivo de resgistro! \033[m')
     else:
         try:
-            a.write(f'{nome}; {idade}\n')
+            a.write(f'{nome}; {idade}; {instituição} ; {disciplina}; {cargaH} ;{salario} \n')
         except:
             interface.cabeçalho(f'\033[0;31m Não consegiu registar Bugou!!!!\033[m ')
         else:
